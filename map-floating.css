@@ -1,0 +1,161 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100vw;	/* 100% of viewport width */
+	height: 100vh;	/* 100% of viewport height */
+}
+
+/* Modal styles */
+#screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+
+.modal {
+    display: none;
+    width: 50vw;
+    height: 27vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    padding: 30px;
+    font-family: DINPro Regular;
+    border-radius:10px;
+}
+
+.modal>.modal-title {
+    
+}
+
+.modal>.modal-body{
+   
+}
+
+.modal>.close-button {
+    color: #cccccc;
+    position:absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    background: none !important;
+    border: none !important;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal>.close-button:hover {
+    color: #bbbbbb !important;
+}
+
+.button-default {
+    background-color: #91b553;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-family: DINPro Light;
+    cursor: pointer;
+    margin: 20px;
+    border: none;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.button-default:hover {
+    background-color: #66803b;
+}
+
+#about {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.map-overlay {
+    position: absolute;
+    background:rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    font-family: DINPro Regular;
+    border-radius: 10px;
+    padding: 15px;
+    z-index: 1;
+}
+
+#legend {
+    opacity: 0.8;
+    left: 0;
+    bottom: 0;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius:100%;
+    width:10px;
+    height: 10px;
+    margin-right: 5px;
+}
+#info-window {
+    top: 0;
+    right: 0;
+    width: 30vw;
+}
+
+#layers-control {
+    position: absolute;
+    z-index: 1;
+    top: 60px;
+    left: 0;
+    margin: 20px;
+    width: 120px;
+    font-family: DINPro Light;
+    font-size: 10px;
+}
+
+#layers-control a {
+    font-size: 13px;
+    color: white;
+    display: block;
+    margin: 0 0 5px 0;
+    padding: 0;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    text-align: center;
+    background-color: #ccc;
+    font-family: DINPro Light;
+}
+
+#layers-control a:last-child {
+    border: none;
+}
+
+#layers-control a:hover {
+    background-color: #66803b;
+}
+
+#layers-control a.active {
+    background-color: #91b553;
+    color: #ffffff;
+}
+
+#layers-control a.active:hover {
+    background: #66803b;
+}
+
